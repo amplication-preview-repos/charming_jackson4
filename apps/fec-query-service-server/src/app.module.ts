@@ -1,6 +1,7 @@
 import { Module } from "@nestjs/common";
 import { QueryModule } from "./query/query.module";
 import { ResultModule } from "./result/result.module";
+import { AiModule } from "./ai/ai.module";
 import { FecModule } from "./fec/fec.module";
 import { HealthModule } from "./health/health.module";
 import { PrismaModule } from "./prisma/prisma.module";
@@ -16,6 +17,7 @@ import { ApolloDriver, ApolloDriverConfig } from "@nestjs/apollo";
   imports: [
     QueryModule,
     ResultModule,
+    AiModule,
     FecModule,
     HealthModule,
     PrismaModule,
